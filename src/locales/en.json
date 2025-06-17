@@ -1,0 +1,19 @@
+{
+    "home": {
+        "title": "Home"
+    },
+    "nav": {
+        "menu": "Menu",
+        "home": "Home",
+        "events": "Events",
+        "shop": "Shop",
+        "support": "Support us",
+        "contact": "Contact",
+        "about": "About us"
+    },
+    "construction": {
+        "title": "Page under construction",
+        "message": "This page is currently under construction. Please check back later."
+    },
+    "footerText": "President of MUC"
+}

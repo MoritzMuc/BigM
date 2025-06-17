@@ -1,0 +1,19 @@
+{
+    "home": {
+        "title": "Startseite"
+    },
+    "nav": {
+        "menu": "Menü",
+        "home": "Startseite",
+        "events": "Veranstaltungen",
+        "shop": "Shop",
+        "support": "Unterstütze uns",
+        "contact": "Kontakt",
+        "about": "Über uns"
+    },
+    "construction": {
+        "title": "Seite im Aufbau",
+        "message": "Diese Seite befindet sich derzeit im Aufbau. Bitte besuche uns später wieder."
+    },
+    "footerText": "Bürgermeister MUC"
+}
