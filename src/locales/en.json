@@ -15,5 +15,10 @@
         "title": "Page under construction",
         "message": "This page is currently under construction. Please check back later."
     },
-    "footerText": "President of MUC"
+    "footerText": "President of MUC",
+    "support": {
+        "free": "Free Support",
+        "paid": "Buy Merch",
+        "follow": "Follow us"
+    }
 }

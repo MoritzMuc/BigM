@@ -5,7 +5,8 @@ function BasicLink({ href, text }: { href: string; text: string }) {
     <Link
       href={href}
       sx={{
-        color: "#0907e7",
+        color: "#242424",
+        fontSize: "20px",
         textDecoration: "none",
         "&:hover": { scale: "1.2" },
         transition: "scale 0.1s ease-in-out",

@@ -1,11 +1,11 @@
+import { Box, Typography } from "@mui/material"
 import "./App.css"
 
 function Home() {
     return (
-        <div>
-            <h1>Hello World</h1>
-            <p>Welcome to my website</p>
-        </div>
+        <Box>
+            <Typography variant="h1">BigM</Typography>
+        </Box>
     )
 }
 

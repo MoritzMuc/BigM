@@ -11,7 +11,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import BasicLink from "./Link";
-import { filter } from "motion/react-client";
+import LanguageButtons from "./LanguageButtons";
 function Navigation() {
   const { t } = useTranslation();
   const [isNavigationOpen, setNavigationOpen] = useState(false);
@@ -31,7 +31,7 @@ function Navigation() {
         height: "60px",
       }}
       animate={{
-        height: isNavigationOpen ? "300px" : "60px",
+        height: isNavigationOpen ? "400px" : "60px",
       }}
       onMouseLeave={() => setNavigationOpen(false)}
     >
@@ -54,27 +54,31 @@ function Navigation() {
             flexDirection: "column",
           }}
         >
-          <Typography variant="h4" sx={{ color: "#0907e7" }}>
+          <Typography variant="h4" sx={{ color: "#242424", fontWeight: "bold" }}>
             {t("nav.menu")}
           </Typography>
-
-          <Box
-            sx={{
-              opacity: isNavigationOpen ? 1 : 0,
-              transition: "opacity 0.3s ease-in-out",
-              display: "flex",
-              flexDirection: "column",
-            }}
-          >
-            <Stack direction={"column"} spacing={2} sx={{ marginTop: "10px" }}>
-              <BasicLink href="/" text={t("nav.home")} />
-              <BasicLink href="/events" text={t("nav.events")} />
-              <BasicLink href="/shop" text={t("nav.shop")} />
-              <BasicLink href="/support" text={t("nav.support")} />
-              <BasicLink href="/about" text={t("nav.about")} />
-              <BasicLink href="/contact" text={t("nav.contact")} />
-            </Stack>
-          </Box>
+          {isNavigationOpen &&(
+            <Box
+              sx={{
+                opacity: isNavigationOpen ? 1 : 0,
+                transition: "opacity 0.3s ease-in-out",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <Stack direction={"column"} spacing={2} sx={{ marginTop: "10px" }}>
+                <BasicLink href="/" text={t("nav.home")} />
+                <BasicLink href="/events" text={t("nav.events")} />
+                <BasicLink href="/shop" text={t("nav.shop")} />
+                <BasicLink href="/support" text={t("nav.support")} />
+                <BasicLink href="/about" text={t("nav.about")} />
+                <BasicLink href="/contact" text={t("nav.contact")} />
+                
+              </Stack>
+              <LanguageButtons />
+            </Box>
+            
+          )}
         </Toolbar>
       </Box>
       <IconButton>

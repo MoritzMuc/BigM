@@ -10,6 +10,8 @@ import Nav from "./components/Nav.tsx";
 import Construction from "./components/Construction.tsx";
 import AdminPanel from "../bigadmin/AdminPanel.tsx";
 import Footer from "./components/Footer.tsx";
+import NextEvent from "./components/NextEvent.tsx";
+import Support from "./sites/Support.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -22,6 +24,7 @@ createRoot(document.getElementById("root")!).render(
               <>
                 <Nav />
                 <Home />
+                <NextEvent />
                 <Footer />
               </>
             }
@@ -67,7 +70,8 @@ createRoot(document.getElementById("root")!).render(
             element={
               <>
                 <Nav />
-                <Construction />
+                <Support />
+                <Footer />
               </>
             }
           />

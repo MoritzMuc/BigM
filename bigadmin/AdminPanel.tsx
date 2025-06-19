@@ -1,10 +1,27 @@
+import { useState } from "react";
+import Panel from "./Panel";
+import { Box, Button, TextField, Typography } from "@mui/material";
+
 function AdminPanel() {
-  return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
-      <h1 className="text-4xl font-bold mb-4">Admin Panel</h1>
-      <p className="text-lg text-gray-700">This is the admin panel.</p>
-    </div>
-  );
+    const [isAdmin, setIsAdmin] = useState(false);
+    const [pwdInput, setPwdInput] = useState("");
+    const confirmPassword = () => {
+        if (pwdInput === "test") {
+            setIsAdmin(true);
+        }
+    };
+    return (
+        <>
+            {isAdmin && <Panel />}
+            {!isAdmin && (
+                <Box>
+                    <Typography variant="h1">Admin Panel Login</Typography>
+                    <TextField value={pwdInput} onChange={(e) => setPwdInput(e.target.value)} />
+                    <Button onClick={confirmPassword}>Log In</Button>
+                    </Box>
+            )}
+        </>
+    );
 }
 
 export default AdminPanel;

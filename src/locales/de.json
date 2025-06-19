@@ -15,5 +15,10 @@
         "title": "Seite im Aufbau",
         "message": "Diese Seite befindet sich derzeit im Aufbau. Bitte besuche uns später wieder."
     },
-    "footerText": "Bürgermeister MUC"
+    "footerText": "Bürgermeister MUC",
+    "support": {
+        "free": "Kostenlos Supporten",
+        "paid": "Merch Kaufen",
+        "follow": "Folg mir"
+    }
 }
