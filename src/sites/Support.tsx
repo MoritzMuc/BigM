@@ -15,29 +15,34 @@ function Support() {
       description: "Description 1",
       image: "https://via.placeholder.com/150",
       link: "https://example.com",
+      background: "/instagramlogo.png",
     },
     {
       title: "TikTok",
       description: "Description 2",
       image: "https://via.placeholder.com/150",
       link: "https://example.com",
+      background: "/tiktoklogo.png",
     },
     {
       title: "Twitch",
       description: "Description 3",
       image: "https://via.placeholder.com/150",
       link: "https://example.com",
+      background: "/twitchlogo.png",
     },
   ];
   const FreeBox: BoxInBoxProps = {
     title: t("support.free"),
     content: [
-      <Stack>
-          <SocialCard {...SocialCards[0]}/>
+      <Stack direction="row" justifyContent={"space-between"}>
+        <SocialCard {...SocialCards[0]} />
+        <SocialCard {...SocialCards[1]} />
+        <SocialCard {...SocialCards[2]} />
       </Stack>
     ],
   }
-  const PaidBox: BoxInBoxProps = {
+  /*const PaidBox: BoxInBoxProps = {
     title: t("support.paid"),
     content: [
       <Stack>
@@ -45,10 +50,10 @@ function Support() {
       </Stack>
     ],
   }
+  */
   return (
     <Box>
       <BoxInBox {...FreeBox} />
-      <BoxInBox {...PaidBox} />
     </Box>
   );
 }

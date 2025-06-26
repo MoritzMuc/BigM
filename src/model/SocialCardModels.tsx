@@ -3,4 +3,5 @@ export interface SocialCardProps {
     description: string;
     image: string;
     link: string;
+    background: string;
 }

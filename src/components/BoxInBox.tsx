@@ -8,7 +8,7 @@ export interface BoxInBoxProps {
 
 function BoxInBox(props: BoxInBoxProps) {
     return (
-      <Box sx={{ marginBottom: "100px" }}>
+      <Box sx={{ marginBottom: "100px", marginTop: "20px" }}>
         <Box
           sx={{
             backgroundColor: "#545454",
